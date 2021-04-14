@@ -7,7 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portal Covid-19</title>
-    <link rel="stylesheet" href="/portal_covid19/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
 </head>
 
@@ -16,7 +16,7 @@
 
 <body>
     <header>
-        <img src="/portal_covid19/src/bg.png" alt="Imagem" />
+        <img src="./src/bg.png" alt="Imagem" />
     </header>
 
 
@@ -26,23 +26,23 @@
         <ul>
             <?php 
                 $menuItem1 = (object) [
-                    'href' => '/portal_covid19/inicio.php',
+                    'href' => './inicio.php',
                     'label' => 'Início'
                   ];
                 $menuItem2 = (object) [
-                    'href' => '/portal_covid19/sobre_covid.php',
+                    'href' => './sobre_covid.php',
                     'label' => 'Sobre a Covid-19'
                   ];
                 $menuItem3 = (object) [
-                    'href' => '/portal_covid19/noticias.php',
+                    'href' => './noticias.php',
                     'label' => 'Notícias'
                   ];
                 $menuItem4 = (object) [
-                    'href' => '/portal_covid19/contatos.php',
+                    'href' => './contatos.php',
                     'label' => 'Contatos'
                   ];
                 $menuItem5 = (object) [
-                    'href' => '/portal_covid19/sobre_nos.php',
+                    'href' => './sobre_nos.php',
                     'label' => 'Sobre'
                   ];
                 $menu = array($menuItem1, $menuItem2, $menuItem3, $menuItem4, $menuItem5);
@@ -72,7 +72,7 @@
 
     <script>
         const secao = document.getElementById('conteudo')
-        fetch("/portal_covid19/inicio.php")
+        fetch("./inicio.php")
             .then(resp => resp.text())
             .then(html => secao.innerHTML = html)
 
